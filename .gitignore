@@ -1,0 +1,57 @@
+# =========================
+# Python
+# =========================
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+
+# =========================
+# Environment
+# =========================
+.env
+
+# =========================
+# Kafka
+# =========================
+kafka/
+
+# =========================
+# Airflow
+# =========================
+airflow/airflow.db
+airflow/logs/
+
+# =========================
+# Analytics
+# =========================
+analytics/orders.db
+
+# =========================
+# Spark Generated Files
+# =========================
+# Ignore generated data
+data/**
+
+# Keep folder structure
+!data/
+!data/.gitkeep
+
+!data/bronze/
+!data/bronze/.gitkeep
+
+!data/silver/
+!data/silver/.gitkeep
+
+!data/gold/
+!data/gold/.gitkeep
+
+!data/audit/
+!data/audit/.gitkeep
+
+!data/checkpoints/
+!data/checkpoints/.gitkeep
+# =========================
+# macOS
+# =========================
+.DS_Store
